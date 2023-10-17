@@ -1,0 +1,5 @@
+\begin{thebibliography}{\bstlabelmark}
+\interlinepenalty=10000
+\setlength{\itemsep}{4pt}\setlength{\parskip}{0pt}\fontsize{10.5pt}{10pt}\selectfont
+\bibitem{kolesnikov2019revisiting} Kolesnikov A, Zhai X, Beyer L. Revisiting self-supervised visual representation learning[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019: 1920-1929.
+\end{thebibliography}
