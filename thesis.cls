@@ -103,9 +103,13 @@
   \setallmainfonts{Times New Roman}  % 设置英文字体
 \else
 \ifmacosx
-  \setCJKmainfont[AutoFakeBold=true]{Songti SC}
-  \newCJKfontfamily{\heiti}{STHeiti}
-  \newfontfamily{\heiti@letter}{STHeiti}
+  % \setCJKmainfont[AutoFakeBold=true]{Songti SC}
+  % \newCJKfontfamily{\heiti}{STHeiti}
+  % \newfontfamily{\heiti@letter}{STHeiti}
+  % \setallmainfonts{Times New Roman}
+  \setCJKmainfont[AutoFakeBold=true]{SimSun}
+  \newCJKfontfamily{\heiti}{SimHei}
+  \newfontfamily{\heiti@letter}{SimHei}
   \setallmainfonts{Times New Roman}
 \else
   \setCJKmainfont[AutoFakeBold=true]{fzsong.ttf}
@@ -363,11 +367,12 @@
   \fancyfoot[CE,CO]{\fontsize{9pt}{10.8pt}\selectfont\Roman{pseudopage}} % 设置页码相关格式
 }{
   \checkoddpage
-  \ifoddpage
-      \blankpage
-    \else
-      \newpage
-    \fi
+  % \ifoddpage
+  %     \blankpage
+  %   \else
+  %     \newpage
+  %   \fi
+  \newpage
 }
 \newcommand{\chinesekeyword}[1]{
   \vspace{12pt}
@@ -402,11 +407,12 @@
   \fancyfoot[CE,CO]{\fontsize{9pt}{10.8pt}\selectfont\Roman{pseudopage}}
 }{
   \checkoddpage
-  \ifoddpage
-      \blankpage
-    \else
-      \newpage
-    \fi
+  % \ifoddpage
+  %     \blankpage
+  %   \else
+  %     \newpage
+  %   \fi
+  \newpage
 }
 \newcommand{\englishkeyword}[1]{
   \vspace{12pt}
@@ -428,11 +434,12 @@
 \pretocmd{\tableofcontents}{
   \newpage
   \checkoddpage
-  \ifoddpage
-      \newpage
-    \else
-      \blankpage
-    \fi
+  % \ifoddpage
+  %     \newpage
+  %   \else
+  %     \blankpage
+  %   \fi
+  \newpage
   \fancyhf{}
   \renewcommand{\headrulewidth}{0.0pt}
   \ifchinesebook{
@@ -480,11 +487,12 @@
     \includepdf[pages={1}]{pics/declarationpage.pdf}
   }{}
   \checkoddpage
-  \ifoddpage
-      \newpage
-    \else
-      \blankpage
-    \fi
+  % \ifoddpage
+  %     \newpage
+  %   \else
+  %     \blankpage
+  %   \fi
+  \newpage
 }
 % 结论章节（不能编号）
 \newcommand{\thesisChapterConclusion}{
